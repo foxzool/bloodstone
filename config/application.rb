@@ -42,5 +42,10 @@ module Bloodstone
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    config.after_initialize do
+      WillPaginate::ViewHelpers.pagination_options[:prev_label]=I18n.t("will_paginate.prev")
+      WillPaginate::ViewHelpers.pagination_options[:next_label]=I18n.t("will_paginate.next")
+    end
   end
 end

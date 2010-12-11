@@ -2,3 +2,6 @@
   #acticle.articlecontent
     h2= link_to post.title, post_path(post)
     p= post.body
+
+
+= will_paginate @posts

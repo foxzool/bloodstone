@@ -1,2 +1,5 @@
 'zh-CN':
   new: 新建
+  will_paginate:
+    next: 下一页
+    prev: 上一页

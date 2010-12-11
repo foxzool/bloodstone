@@ -1,5 +1,6 @@
 Bloodstone::Application.routes.draw do
   get "home/index"
+  get 'home/about'
   resources 'posts'
 
   # The priority is based upon order of creation:

@@ -8,10 +8,11 @@ gem 'inherited_resources',       '~> 1.1.2'
 #gem 'inherited_resources_views'
 gem "will_paginate", "~> 3.0.pre2"
 
-gem 'slim'
+#gem 'slim'
+gem 'simple-navigation'
 
 group :development do
-  gem 'slim-rails',              :git => 'git://github.com/zhooul/slim-rails.git'
+#  gem 'slim-rails',              :git => 'git://github.com/zhooul/slim-rails.git'
 end
 
 group :development, :test do

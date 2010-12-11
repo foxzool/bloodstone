@@ -1,113 +1,106 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Bloodstone</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
-<body>
-<div id="wrapper"><!-- #wrapper -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Bloodstone</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="wrapper"><!-- #wrapper -->
 
-	<header><!-- header -->
-		<h1><a href="#">Vectry</a></h1>
-	</header><!-- end of header -->
-	
-	<nav><!-- top nav -->
-		<div class="menu">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Support</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</div>
-	</nav><!-- end of top nav -->
-	
-	<section id="main"><!-- #main content and sidebar area -->
-	    <div id="content">
-				<%= yield %>
+      <header><!-- header -->
+      <h1><a href="#">Vectry</a></h1>
+      </header><!-- end of header -->
 
-		</div>
+      <nav><!-- top nav -->
+      <div class="menu">
+        <%= render_navigation %>
+      </div>
+      </nav><!-- end of top nav -->
 
-	   <aside>
-			<section>
-				<h3>Categories</h3>
-				<ul>
-					<li><a href="#">Widget Colors</a></li>
-					<li><a href="#">Widget Sizes</a></li>
-					<li><a href="#">Compare Widgets</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Features</a></li>
-				</ul>
-			</section>
+      <section id="main"><!-- #main content and sidebar area -->
+      <div id="content">
+        <%= yield %>
 
-			<section>
-				<h3>Sponsors</h3>
-					<img src="images/ad.gif" alt="ad" /> <img src="images/ad.gif" alt="ad" />
-					<br />
-					<img src="images/ad.gif" alt="ad" /> <img src="images/ad.gif" alt="ad" />
-					<br /><br />
-			</section>
+      </div>
 
-			<section>
-				<h3>Recent Articles</h3>
-					<ul>
-						<li><a href="#">Which Widget Do I Need?</a></li>
-						<li><a href="#">When Widgets Go Mobile</a></li>
-					</ul>
-			</section>
+      <aside>
+      <section>
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#">Widget Colors</a></li>
+        <li><a href="#">Widget Sizes</a></li>
+        <li><a href="#">Compare Widgets</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Features</a></li>
+      </ul>
+      </section>
 
-		</aside>
+      <section>
+      <h3>Sponsors</h3>
+      <img src="images/ad.gif" alt="ad" /> <img src="images/ad.gif" alt="ad" />
+      <br />
+      <img src="images/ad.gif" alt="ad" /> <img src="images/ad.gif" alt="ad" />
+      <br /><br />
+      </section>
 
-	</section><!-- end of #main content and sidebar-->
+      <section>
+      <h3>Recent Articles</h3>
+      <ul>
+        <li><a href="#">Which Widget Do I Need?</a></li>
+        <li><a href="#">When Widgets Go Mobile</a></li>
+      </ul>
+      </section>
 
-		<footer>
-		<section id="footer-area">
+      </aside>
 
-			<section id="footer-outer-block">
-					<aside class="footer-segment">
-							<h4>Friends</h4>
-								<ul>
-									<li><a href="#">one linkylink</a></li>
-									<li><a href="#">two linkylinks</a></li>
-									<li><a href="#">three linkylinks</a></li>
-								</ul>
-					</aside><!-- end of #first footer segment -->
+      </section><!-- end of #main content and sidebar-->
 
-					<aside class="footer-segment">
-							<h4>Awesome Stuff</h4>
-								<ul>
-									<li><a href="#">one linkylink</a></li>
-									<li><a href="#">two linkylinks</a></li>
-									<li><a href="#">three linkylinks</a></li>
-								</ul>
-					</aside><!-- end of #second footer segment -->
+      <footer>
+      <section id="footer-area">
 
-					<aside class="footer-segment">
-							<h4>Coolness</h4>
-								<ul>
-									<li><a href="#">one linkylink</a></li>
-									<li><a href="#">two linkylinks</a></li>
-									<li><a href="#">three linkylinks</a></li>
-								</ul>
-					</aside><!-- end of #third footer segment -->
-					
-					<aside class="footer-segment">
-							<h4>Blahdyblah</h4>
-								<p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
-					</aside><!-- end of #fourth footer segment -->
+      <section id="footer-outer-block">
+      <aside class="footer-segment">
+      <h4>Friends</h4>
+      <ul>
+        <li><a href="#">one linkylink</a></li>
+        <li><a href="#">two linkylinks</a></li>
+        <li><a href="#">three linkylinks</a></li>
+      </ul>
+      </aside><!-- end of #first footer segment -->
 
-			</section><!-- end of footer-outer-block -->
+      <aside class="footer-segment">
+      <h4>Awesome Stuff</h4>
+      <ul>
+        <li><a href="#">one linkylink</a></li>
+        <li><a href="#">two linkylinks</a></li>
+        <li><a href="#">three linkylinks</a></li>
+      </ul>
+      </aside><!-- end of #second footer segment -->
 
-		</section><!-- end of footer-area -->
-	</footer>
-	
-</div><!-- #wrapper -->
-<!-- Free template created by http://freehtml5templates.com -->
-</body>
+      <aside class="footer-segment">
+      <h4>Coolness</h4>
+      <ul>
+        <li><a href="#">one linkylink</a></li>
+        <li><a href="#">two linkylinks</a></li>
+        <li><a href="#">three linkylinks</a></li>
+      </ul>
+      </aside><!-- end of #third footer segment -->
+
+      <aside class="footer-segment">
+      <h4>Blahdyblah</h4>
+      <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+      </aside><!-- end of #fourth footer segment -->
+
+      </section><!-- end of footer-outer-block -->
+
+      </section><!-- end of footer-area -->
+      </footer>
+
+    </div><!-- #wrapper -->
+    <!-- Free template created by http://freehtml5templates.com -->
+  </body>
 </html>

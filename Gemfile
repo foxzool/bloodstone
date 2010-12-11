@@ -4,7 +4,10 @@ gem 'rails', '3.0.3'
 
 gem 'pg'
 
-gem 'slim'
+gem 'inherited_resources',       '~> 1.1.2'
+#gem 'inherited_resources_views'
+
+gem 'slim',                      :git => 'git://github.com/stonean/slim.git'
 
 group :development do
   gem 'slim-rails'

@@ -40,7 +40,7 @@ header {
 width: 940px;
 height: 250px;
 margin: 0 auto;
-background: #fff url(images/header2.png) no-repeat right top;
+background: #fff url(/images/header2.png) no-repeat right top;
 /* curved border radius */
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;

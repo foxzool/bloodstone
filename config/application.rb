@@ -44,7 +44,7 @@ module Bloodstone
     config.filter_parameters += [:password]
 
     config.after_initialize do
-      WillPaginate::ViewHelpers.pagination_options[:prev_label]=I18n.t("will_paginate.prev")
+      WillPaginate::ViewHelpers.pagination_options[:previous_label]=I18n.t("will_paginate.prev")
       WillPaginate::ViewHelpers.pagination_options[:next_label]=I18n.t("will_paginate.next")
     end
   end

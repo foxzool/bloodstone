@@ -1,5 +1,7 @@
 'zh-CN':
   new: 新建
+  menu_home: 首页
+  menu_about: 关于
   will_paginate:
     next: 下一页
     prev: 上一页

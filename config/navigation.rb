@@ -41,8 +41,8 @@ SimpleNavigation::Configuration.run do |navigation|
     #                            against the current URI.
     #
     #primary.item :key_1, 'name', url, options
-    primary.item :home, 'Home', root_path
-    primary.item :about, 'about', home_about_path
+    primary.item :home, t('menu_home'), root_path
+    primary.item :about, t('menu_about'), home_about_path
 
     # Add an item which has a sub navigation (same params, but with block)
     #primary.item :key_2, 'name', url, options do |sub_nav|

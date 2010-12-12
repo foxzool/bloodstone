@@ -1,0 +1,4 @@
+title: 'Rails中文博客'
+header: '我的博客'
+will_paginate:
+  per_page: 10

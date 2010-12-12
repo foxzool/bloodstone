@@ -4,5 +4,5 @@ class Post < ActiveRecord::Base
 
   #will_paginate的配置
   cattr_reader :per_page
-  @@per_page = 10
+  @@per_page = Settings.will_paginate.per_page
 end

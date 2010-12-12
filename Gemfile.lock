@@ -88,6 +88,7 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
+    rdiscount (1.6.5)
     responders (0.6.2)
     rspec (2.0.1)
       rspec-core (~> 2.0.1)
@@ -130,6 +131,7 @@ DEPENDENCIES
   pg
   rails (= 3.0.3)
   rails_config
+  rdiscount
   rspec-rails (~> 2.0.0)
   simple-navigation
   steak

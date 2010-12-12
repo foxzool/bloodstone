@@ -3,7 +3,7 @@
 
   <h2><%= link_to post.title, post_path(post)  %></h2>
   <p>
-    <%= post.body%>
+    <%= render_markdown(post.body)%>
   </p>
   </article>
 <% end %>

@@ -1,7 +1,7 @@
 - @posts.each do |post|
-  #acticle.articlecontent
+  acticle.articlecontent
     h2= link_to post.title, post_path(post)
-    p= post.body
+    p= render_markdown(post.body)
 
 
 = will_paginate @posts

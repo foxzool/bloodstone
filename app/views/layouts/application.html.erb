@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title><%= Settings.title %></title>
     <%= stylesheet_link_tag :all %>
-    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag :all %>
     <%= csrf_meta_tag %>
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
@@ -46,7 +46,7 @@
       <section>
       <h3><%= t('dashboard') %></h3>
       <% if current_user %>
-        <%= current_user.username %><br/>
+          <%= link_to t('New post'), new_post_path %><br/>
         <%= link_to t('Sign out'), destroy_user_session_path %>
       <% else %>
         <%=  link_to t('Sign in'), new_user_session_path %><br/>

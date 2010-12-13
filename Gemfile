@@ -5,6 +5,8 @@ gem 'rails', '3.0.3'
 gem 'pg'
 
 gem 'devise', '~> 1.2.rc'
+gem 'cancan'
+gem 'easy_roles'
 
 gem 'inherited_resources',       '~> 1.1.2'
 #gem 'inherited_resources_views'

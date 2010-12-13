@@ -4,19 +4,22 @@ gem 'rails', '3.0.3'
 
 gem 'pg'
 
+gem 'devise', '~> 1.2.rc'
+
 gem 'inherited_resources',       '~> 1.1.2'
 #gem 'inherited_resources_views'
 gem "will_paginate", "~> 3.0.pre2"
 gem 'rdiscount'
 
-#gem 'slim'
+gem 'slim'
 gem 'simple-navigation'
+gem "simple_form"
 
 gem "rails_config"
 
 
 group :development do
-#  gem 'slim-rails',              :git => 'git://github.com/zhooul/slim-rails.git'
+  gem 'slim-rails',              :git => 'git://github.com/zhooul/slim-rails.git'
 end
 
 group :development, :test do

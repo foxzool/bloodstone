@@ -1,8 +1,16 @@
 'zh-CN':
   activerecord:
     models:
-      post: 文章
+      post: '文章'
+      user: '用户'
     attributes:
       post:
-        title: 标题
-        body: 内容
+        title: '标题'
+        body: '内容'
+      user:
+        login: '用户名或邮箱'
+        username: '用户名'
+        email: '邮箱'
+        password: '密码'
+        password_confirmation: '确认密码'
+        remember_me: '保持登录'

@@ -20,11 +20,15 @@
         <%= render_navigation %>
       </div>
       </nav><!-- end of top nav -->
+      
 
       <section id="main"><!-- #main content and sidebar area -->
+      <div id="flash">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
       <div id="content">
         <%= yield %>
-
       </div>
 
       <aside>
@@ -40,11 +44,15 @@
       </section>
 
       <section>
-      <h3>Sponsors</h3>
-      <img src="images/ad.gif" alt="ad" /> <img src="images/ad.gif" alt="ad" />
-      <br />
-      <img src="images/ad.gif" alt="ad" /> <img src="images/ad.gif" alt="ad" />
-      <br /><br />
+      <h3><%= t('dashboard') %></h3>
+      <% if current_user %>
+        <%= current_user.username %><br/>
+        <%= link_to t('Sign out'), destroy_user_session_path %>
+      <% else %>
+        <%=  link_to t('Sign in'), new_user_session_path %><br/>
+        <%=  link_to t('Sign up'), new_user_registration_path %>
+      <% end %>
+
       </section>
 
       <section>

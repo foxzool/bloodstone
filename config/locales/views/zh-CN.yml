@@ -1,7 +1,17 @@
 'zh-CN':
-  new: 新建
-  menu_home: 首页
-  menu_about: 关于
+  new: '新建'
+  menu_home: '首页'
+  menu_about: '关于'
   will_paginate:
-    next: 下一页
-    prev: 上一页
+    next: '下一页'
+    prev: '上一页'
+  dashboard: '控制面板'
+
+  "Sign in": '登录'
+  "Sign up": '注册'
+  "Sign out": '登出'
+  "Forgot your password?": '忘记密码'
+  "Didn't receive confirmation instructions?": '重置密码'
+  "Didn't receive unlock instructions?": '重发解锁邮件'
+  "Sign in with #{provider}": "使用#{provider}登录"
+  "Send me reset password instructions": "发送密码重置邮件"

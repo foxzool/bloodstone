@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
-  has_many :catagorization 
-  has_many :catagories, :through => :catagorization
+  has_many :categorizations
+  has_many :categories, :through => :categorizations
 
   #will_paginate的配置
   cattr_reader :per_page

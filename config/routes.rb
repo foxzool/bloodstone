@@ -5,8 +5,9 @@ Bloodstone::Application.routes.draw do
   get 'home/about'
   resources 'posts'
 
-  resources 'catagories' do
-    resources 'posts'
+  get 'categories/:id' => 'categories#posts_list'
+  scope '/admin' do
+    resources 'categories'
   end
 
   # The priority is based upon order of creation:

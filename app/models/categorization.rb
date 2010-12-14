@@ -1,4 +1,4 @@
 class Categorization < ActiveRecord::Base
-  belongs_to :posts
-  belongs_to :catagories
+  belongs_to :post
+  belongs_to :category
 end

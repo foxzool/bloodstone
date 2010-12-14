@@ -33,20 +33,15 @@
 
       <aside>
       <section>
-      <h3>Categories</h3>
-      <ul>
-        <li><a href="#">Widget Colors</a></li>
-        <li><a href="#">Widget Sizes</a></li>
-        <li><a href="#">Compare Widgets</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Features</a></li>
-      </ul>
+      <h3><%= t('Categories') %></h3>
+      <%= render 'categories/list'%>
       </section>
 
       <section>
-      <h3><%= t('dashboard') %></h3>
+      <h3><%= t('Dashboard') %></h3>
       <% if current_user %>
-          <%= link_to t('New post'), new_post_path %><br/>
+        <%= link_to rest_i18n('New', 'post'), new_post_path %> | <%= link_to rest_i18n('Listing', 'post'), posts_path %><br/>
+        <%= link_to rest_i18n('New', 'category'), new_category_path %> | <%= link_to rest_i18n('Listing', 'category'), categories_path %><br/>
         <%= link_to t('Sign out'), destroy_user_session_path %>
       <% else %>
         <%=  link_to t('Sign in'), new_user_session_path %><br/>

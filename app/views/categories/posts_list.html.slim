@@ -1,0 +1,8 @@
+- @posts.each do |post|
+  acticle.articlecontent
+    = l post.created_at, :format => :short
+    |   
+    = link_to post.title, post_path(post)
+    br
+
+= will_paginate @posts

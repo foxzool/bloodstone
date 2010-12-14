@@ -1,0 +1,16 @@
+p
+  b= t("activerecord.attributes.category.name")
+  |:
+  = @category.name
+p
+  b= t("activerecord.attributes.category.realname")
+  |:
+  = @category.realname
+p
+  b= t("activerecord.attributes.category.kind")
+  |:
+  = @category.kind
+
+= link_to t('Edit'), edit_category_path(@category)
+||
+= link_to t('Back'), categories_path

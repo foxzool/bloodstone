@@ -1,0 +1,21 @@
+h1 = rest_i18n("Listing", "category")
+
+table
+  tr
+    th = t("activerecord.attributes.category.name")
+    th = t("activerecord.attributes.category.kind")
+    th
+    th
+    th
+
+  - @categories.each do |category|
+    tr
+      td= category.name
+      td= category.kind
+      td= link_to t('Show'), category
+      td= link_to t('Edit'), edit_category_path(category)
+      td= link_to t('Destroy'), category, :confirm => t('Are you sure?'), :method => :delete
+
+br
+
+= link_to t("New %{resource}", :resource => t("activerecord.models.category")), new_category_path

@@ -2,9 +2,10 @@
   = f.error_notification
 
   div class="inputs"
-          = f.input :title
-          = f.input :body
-    
-
+              = f.input :title
+              = f.input :body
+              = f.association :categories
+      
   div class="actions"
     = f.button :submit
+

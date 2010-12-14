@@ -10,17 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101213054810) do
+ActiveRecord::Schema.define(:version => 20101214031407) do
 
-  create_table "catagories", :force => true do |t|
-    t.string   "name"
-    t.string   "kind"
+  create_table "categories", :force => true do |t|
+    t.string   "name",        :null => false
+    t.string   "realname",    :null => false
+    t.string   "kind",        :null => false
     t.integer  "posts_count"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "categorizations", :id => false, :force => true do |t|
+  create_table "categorizations", :force => true do |t|
     t.integer  "post_id"
     t.integer  "category_id"
     t.datetime "created_at"

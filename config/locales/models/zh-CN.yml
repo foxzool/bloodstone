@@ -18,5 +18,4 @@
         remember_me: '保持登录'
       category:
         name: '名称'
-        realname: 'url名称'
-        kind: '类型'
+        slug: 'slug'

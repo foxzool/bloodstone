@@ -2,7 +2,7 @@ Bloodstone::Application.routes.draw do
   devise_for :users
 
   get "home/index"
-  get 'home/about'
+
   resources 'posts'
 
   get 'categories/:id' => 'categories#posts_list'

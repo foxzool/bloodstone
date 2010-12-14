@@ -1,6 +1,12 @@
 class PostsController < InheritedResources::Base
   load_and_authorize_resource
 
+  def create
+    @post = Post.new(params[:post])
+    @post.user_id = current_user.id
+    create!
+  end
+
   protected
 
   def collection

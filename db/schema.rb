@@ -10,30 +10,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101214031407) do
+ActiveRecord::Schema.define(:version => 20101214062757) do
 
   create_table "categories", :force => true do |t|
-    t.string   "name",        :null => false
-    t.string   "realname",    :null => false
-    t.string   "kind",        :null => false
-    t.integer  "posts_count"
+    t.string   "name",                       :null => false
+    t.string   "slug",                       :null => false
+    t.integer  "posts_count", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "categorizations", :force => true do |t|
-    t.integer  "post_id"
-    t.integer  "category_id"
+    t.integer  "post_id",     :null => false
+    t.integer  "category_id", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "posts", :force => true do |t|
-    t.string   "title"
-    t.text     "body"
+    t.string   "title",      :null => false
+    t.string   "slug",       :null => false
+    t.text     "body",       :null => false
+    t.text     "body_html",  :null => false
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "slugs", :force => true do |t|
+    t.string   "name"
+    t.integer  "sluggable_id"
+    t.integer  "sequence",                     :default => 1, :null => false
+    t.string   "sluggable_type", :limit => 40
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "slugs", ["name", "sluggable_type", "sequence", "scope"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
+  add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "",       :null => false

@@ -3,7 +3,7 @@ h1 = rest_i18n("Listing", "category")
 table
   tr
     th = t("activerecord.attributes.category.name")
-    th = t("activerecord.attributes.category.kind")
+    th = t("activerecord.attributes.category.slug")
     th
     th
     th
@@ -11,7 +11,7 @@ table
   - @categories.each do |category|
     tr
       td= category.name
-      td= category.kind
+      td= category.slug
       td= link_to t('Show'), category
       td= link_to t('Edit'), edit_category_path(category)
       td= link_to t('Destroy'), category, :confirm => t('Are you sure?'), :method => :delete

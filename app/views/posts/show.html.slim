@@ -1,6 +1,6 @@
 acticle.articlecontent
     h2= link_to @post.title, post_path(@post)
-    p= render_markdown(@post.body)
+    p= raw @post.body_html
 
 = link_to t('Edit'), edit_post_path(@post)
 ||

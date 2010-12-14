@@ -1,0 +1,23 @@
+h1 = rest_i18n("Listing", "<%= i18n_scope.to_s %>")
+
+table
+  tr
+<% for attribute in attributes -%>
+    th = t("activerecord.attributes.<%= i18n_scope + '.' + attribute.name.to_s %>")
+<% end -%>
+    th
+    th
+    th
+
+  - @<%= plural_table_name %>.each do |<%= singular_table_name %>|
+    tr
+<% for attribute in attributes -%>
+      td= <%= singular_table_name %>.<%= attribute.name %>
+<% end -%>
+      td= link_to t('Show'), <%= singular_table_name %>
+      td= link_to t('Edit'), edit_<%= singular_table_name %>_path(<%= singular_table_name %>)
+      td= link_to t('Destroy'), <%= singular_table_name %>, :confirm => t('Are you sure?'), :method => :delete
+
+br
+
+= link_to t("New %{resource}", :resource => t("activerecord.models.<%= i18n_scope %>")), new_<%= singular_table_name %>_path

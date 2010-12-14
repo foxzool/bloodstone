@@ -1,0 +1,10 @@
+<% for attribute in attributes -%>
+p
+  b= t("activerecord.attributes.<%= i18n_scope + '.' + attribute.name.to_s %>")
+  |:
+  = @<%= singular_table_name %>.<%= attribute.name %>
+<% end -%>
+
+= link_to t('Edit'), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>)
+||
+= link_to t('Back'), <%= index_helper %>_path

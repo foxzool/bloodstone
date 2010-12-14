@@ -1,0 +1,7 @@
+h1 = rest_i18n("Editing", "<%= i18n_scope%>")
+== render 'form'
+
+= link_to t('Show'), @<%= singular_table_name %>
+||
+= link_to t('Back'), <%= index_helper %>_path
+

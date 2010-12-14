@@ -1,0 +1,19 @@
+h1 = rest_i18n("Listing", "post")
+
+table
+  tr
+    th = t("activerecord.attributes.post.title")
+    th
+    th
+    th
+
+  - @posts.each do |post|
+    tr
+      td= post.title
+      td= link_to t('Show'), post
+      td= link_to t('Edit'), edit_post_path(post)
+      td= link_to t('Destroy'), post, :confirm => t('Are you sure?'), :method => :delete
+
+br
+
+= link_to t("New %{resource}", :resource => t("activerecord.models.post")), new_post_path

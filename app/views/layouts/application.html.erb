@@ -1,91 +1,78 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title><%= Settings.title %></title>
-    <%= stylesheet_link_tag :all %>
-    <%= javascript_include_tag :all %>
-    <%= csrf_meta_tag %>
-    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  </head>
-  <body>
-    <div id="wrapper"><!-- #wrapper -->
+<!doctype html>  
 
-      <header><!-- header -->
-      <h1><a href="#"><%= Settings.header %></a></h1>
-      </header><!-- end of header -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-      <nav><!-- top nav -->
-      <div class="menu">
-        <%= render_navigation %>
-      </div>
-      </nav><!-- end of top nav -->
+  <title><%= Settings.title %></title>
+  <meta name="description" content="<%= Settings.description%>">
+  <meta name="author" content="<%= Settings.author%>">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-      <section id="main"><!-- #main content and sidebar area -->
-      <div id="flash">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-      </div>
-      <div id="content">
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag 'libs/modernizr-1.6.min' %>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+
+    </header>
+    
+    <div id="main">
         <%= yield %>
-      </div>
+    </div>
+    
+    <footer>
 
-      <aside>
-      <section>
-      <h3><%= t('Categories') %></h3>
-      <%= render 'shared/categories'%>
-      </section>
+    </footer>
+  </div> <!-- end of #container -->
 
-      <section>
-      <h3><%= t('Dashboard') %></h3>
-      <% if current_user %>
-        <%= link_to rest_i18n('New', 'post'), new_post_path %> | <%= link_to rest_i18n('Listing', 'post'), posts_path %><br/>
-        <%= link_to rest_i18n('New', 'category'), new_category_path %> | <%= link_to rest_i18n('Listing', 'category'), categories_path %><br/>
-        <%= link_to t('Sign out'), destroy_user_session_path %>
-      <% else %>
-        <%=  link_to t('Sign in'), new_user_session_path %><br/>
-        <%=  link_to t('Sign up'), new_user_registration_path %>
-      <% end %>
 
-      </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))</script>
+  
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <%= javascript_include_tag 'plugins' %>
+  <%= javascript_include_tag 'script.js' %>
+  <!-- end concatenated and minified scripts-->
+  
+  
+  <!--[if lt IE 7 ]>
+    <%= javascript_include_tag 'libs/dd_belatedpng' %>
+    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
+  <![endif]-->
 
-      <section>
-      <h3><%= t('Recent Articles') %></h3>
-      <%= render "shared/last_posts" %>
-      </section>
+  <!-- yui profiler and profileviewer - remove for production -->
+  <%- unless Rails.env.production? %>
+  <%= javascript_include_tag 'profiling/yahoo-profiling.min' %>
+  <%= javascript_include_tag 'profiling/config' %>
+  <%- end %>
+  <!-- end profiling code -->
 
-      </aside>
 
-      </section><!-- end of #main content and sidebar-->
-
-      <footer>
-      <section id="footer-area">
-      <%= Settings.title %> © <%= Settings.author %>.  Powered by <%= link_to 'BloodStone', 'https://github.com/zhooul/bloodstone' %>.
-      </section><!-- end of footer-area -->
-      </footer>
-
-    </div><!-- #wrapper -->
-    <script>
-
-      var _gaq = [['_setAccount', '<%= Settings.google_analytics %>'], ['_trackPageview']];
-
-      (function(d, t) {
-
-        var g = d.createElement(t),
-
+  <!-- change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', '<%= Settings.google_analytics %>'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
-
-        g.async = true;
-
-        g.src = '//www.google-analytics.com/ga.js';
-
-        s.parentNode.insertBefore(g, s);
-
-      })(document, 'script');
-
-    </script>
-
-    <!-- Free template created by http://freehtml5templates.com -->
-  </body>
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+</body>
 </html>

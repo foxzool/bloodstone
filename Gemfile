@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.3'
 
 gem 'pg'
+#gem 'mysql2'
+#gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'devise', '~> 1.2.rc'
 gem 'cancan'
@@ -19,9 +21,7 @@ gem "simple_form"
 gem "rails_config"
 gem 'rdiscount'
 
-group :development do
-  gem 'slim-rails',              :git => 'git://github.com/zhooul/slim-rails.git'
-end
+gem 'slim-rails'
 
 group :development, :test do
   gem 'autotest'

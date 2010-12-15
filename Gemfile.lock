@@ -29,6 +29,7 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+    acts-as-taggable-on (2.0.6)
     arel (2.0.6)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -145,6 +146,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on
   autotest
   cancan
   capybara

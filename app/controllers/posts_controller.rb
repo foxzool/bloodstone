@@ -3,6 +3,7 @@ class PostsController < InheritedResources::Base
 
   def create
     @post = Post.new(params[:post])
+    @post.tag_list = params[:newtags]
     @post.user_id = current_user.id
     create!
   end

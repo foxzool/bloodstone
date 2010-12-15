@@ -10,6 +10,7 @@ gem 'devise', '~> 1.2.rc'
 gem 'cancan'
 gem 'easy_roles'
 gem "friendly_id", "~> 3.1"
+gem 'acts-as-taggable-on'
 
 gem 'inherited_resources',       '~> 1.1.2'
 #gem 'inherited_resources_views'

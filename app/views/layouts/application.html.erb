@@ -19,19 +19,63 @@
 
   <%= stylesheet_link_tag 'style' %>
   <%= javascript_include_tag 'libs/modernizr-1.6.min' %>
+  <%= csrf_meta_tag %>
 
 </head>
 
 <body>
 
   <div id="container">
-    <header>
+      
 
-    </header>
+
+	  <header><!-- header -->
+		  <h1><%= link_to Settings.title, root_path%></h1>
+		  <h2><%= Settings.header %></h2>
+	  </header><!-- end of header -->
+    <nav><!-- top nav -->
+		<div class="menu">
+			<%= render_navigation %>
+		</div>
+	</nav><!-- end of top nav -->
+  
     
-    <div id="main">
+<section id="main"><!-- #main content and sidebar area -->
+      <div id="flash">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+      <div id="content">
         <%= yield %>
-    </div>
+      </div>
+
+      <aside>
+      <section>
+      <h3><%= t('Categories') %></h3>
+      <%= render 'shared/categories'%>
+      </section>
+
+      <section>
+      <h3><%= t('Dashboard') %></h3>
+      <% if current_user %>
+        <%= link_to rest_i18n('New', 'post'), new_post_path %> | <%= link_to rest_i18n('Listing', 'post'), posts_path %><br/>
+        <%= link_to rest_i18n('New', 'category'), new_category_path %> | <%= link_to rest_i18n('Listing', 'category'), categories_path %><br/>
+        <%= link_to t('Sign out'), destroy_user_session_path %>
+      <% else %>
+        <%=  link_to t('Sign in'), new_user_session_path %><br/>
+        <%=  link_to t('Sign up'), new_user_registration_path %>
+      <% end %>
+
+      </section>
+
+      <section>
+      <h3><%= t('Recent Articles') %></h3>
+      <%= render "shared/last_posts" %>
+      </section>
+
+      </aside>
+
+      </section><!-- end of #main content and sidebar-->
     
     <footer>
 

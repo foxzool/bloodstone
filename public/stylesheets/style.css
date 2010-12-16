@@ -13,6 +13,7 @@ menu, nav, section, summary, time, mark, audio, video {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
+  color: #A6E22E;
 }                  
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
     display:block;
@@ -31,7 +32,7 @@ hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 
 input, select { vertical-align:middle; }
 
 
-body { font:13px/1.231 sans-serif; *font-size:small; } 
+body { font:13px/1.231 sans-serif; *font-size:small; background-color: #333333;} 
 select, input, textarea, button { font:99% sans-serif; }
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
@@ -40,8 +41,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 html { overflow-y: scroll; }
 
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a, a:active, a:visited { color: #66D9EF; }
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
@@ -66,8 +66,8 @@ input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 
 .no-boxshadow input:invalid, 
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+::-moz-selection{ background: #777777; color:#fff; text-shadow: none; }
+::selection { background:#777777; color:#fff; text-shadow: none; } 
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
 
 button {  width: auto; overflow: visible; }
@@ -80,24 +80,6 @@ button {  width: auto; overflow: visible; }
 .clearfix:before, .clearfix:after {  content: "\0020"; display: block; height: 0; visibility: hidden;	 } 
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-
-
- /* Primary Styles
-    Author: 
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media all and (orientation:portrait) { 
   
@@ -127,3 +109,187 @@ button {  width: auto; overflow: visible; }
   h2, h3{ page-break-after: avoid; }
 }
 
+
+ /* Primary Styles
+    Author: 
+ */
+
+#container {
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+/* nav */
+
+nav .menu {
+width: 940px;
+float: right;
+font-size: 16px;
+font-weight: bold;
+border-bottom: #307437;
+border-style: dashed;
+}
+
+nav .menu ul {
+list-style: none;
+margin: 0;
+text-align: left;
+}
+
+nav .menu li {
+display: inline;
+position: relative;
+}
+
+nav .menu a {
+color: #ddd;
+padding: 0 15px;
+line-height: 38px;
+text-decoration: none;
+}
+
+nav .menu a:hover {
+text-decoration: underline;
+}
+
+/* header */
+
+header {
+margin: 0 auto;
+}
+
+header h1, header h2 {
+padding: 0 0 0 30px;
+line-height: normal;
+}
+
+header h1 { 	
+float: left;
+margin: 10px 0 0 10px;
+width: 800px;
+font-size: 32px;
+line-height: 36px;
+}
+
+header h1 a:link, header h1 a:visited {
+/*color: #A6E22E;*/
+color: #E6DB74;
+font-weight: bold;
+text-decoration: none;
+}
+
+header h1 a:hover { 
+text-decoration: none; 
+}
+
+header h2 {
+padding: 20px 0 10px 10px;
+font-style: italic;
+font-size: 14px;
+color: #777;
+clear: right;
+}
+
+#main {
+width: 940px;
+margin: 0 auto;
+padding-bottom: 10px;
+overflow: hidden;
+}
+
+/** ARTICLES **/
+#content {
+float: left;
+width: 585px;
+margin:10px 0 10px 0;
+padding:5px 20px 5px 20px;
+border-right: #307437;
+border-style: dashed;
+}
+
+.alignleft, img.alignleft {
+display: inline;
+float: left;
+margin-right: 24px;
+margin-top: 4px;
+}
+
+.alignright, img.alignright {
+display: inline;
+float: right;
+margin-left: 24px;
+margin-top: 4px;
+}
+
+.aligncenter, img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.alignleft, img.alignright, img.aligncenter {
+margin-bottom: 12px;
+}
+
+/* sidebar and widget blocks */
+
+aside {
+float: right;
+text-align: left;
+width: 290px;
+margin:0;
+padding:0;
+}
+
+/* article */
+.articlecontent {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.articlecontent p a {
+color: #307437;
+}
+
+.articlecontent p a:hover {
+color: #000;
+}
+
+/* box shadow on pics */
+.articlecontent img {
+/* curved border radius */
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+/* sidebar */
+aside section {
+margin: 10px 0 0 0;
+padding: 10px 10px;
+
+}
+
+aside section ul {
+margin: 0 0 0 20px;
+color: #307437;
+}
+
+aside section ul li a {
+display: block;
+text-decoration: none;
+color: #000;
+}
+
+aside section ul li a:hover {
+background-color: #307437;
+color: #fff;
+}
+
+aside section h3 {
+margin-bottom: 10px;
+color: #F92672;
+}

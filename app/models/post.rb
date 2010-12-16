@@ -13,7 +13,8 @@ class Post < ActiveRecord::Base
   before_validation :render_html
 
   acts_as_taggable
-
+  
+  named_scope :by_date, :order => "created_at DESC"
   attr_accessor :newtags  
 
   def render_html

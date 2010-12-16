@@ -6,6 +6,7 @@ Bloodstone::Application.routes.draw do
   resources 'posts'
 
   get 'categories/:id' => 'categories#posts_list'
+  get 'tags/:name' => 'tags#posts_list' , :as => 'tags'
   scope '/admin' do
     resources 'categories'
   end

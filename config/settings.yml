@@ -1,6 +1,7 @@
-title: 'Rails中文博客'
+title: 'ZoOL => Blog'
 header: '我的博客'
-description: 'Rails中文博客'
+description: 'Power by bloodstone'
+site_url: 'http://blog.zool.it' #最后不要带 /
 
 version: '0.1.1'
 will_paginate:

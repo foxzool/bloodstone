@@ -11,3 +11,5 @@
     rake db:create
 
     rake db:migrate
+    
+    rake bloodstone:setup_blog db=mysql (可选项=> mysql, postgresql, sqlite3)

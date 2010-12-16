@@ -12,6 +12,10 @@ class Post < ActiveRecord::Base
 
   before_validation :render_html
 
+  acts_as_taggable
+
+  attr_accessor :newtags  
+
   def render_html
     self.body_html = RDiscount.new(self.body,:smart, :filter_html).to_html
   end

@@ -1,0 +1,9 @@
+= simple_form_for(@tag) do |f|
+  = f.error_notification
+
+  div class="inputs"
+              = f.input :name
+      
+  div class="actions"
+    = f.button :submit
+

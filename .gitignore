@@ -1,6 +1,9 @@
 .bundle
 .project
+config/settings.yml
 config/database.yml
+public/robots.txt
+public/sitemap*
 db/*.sqlite3
 log/*.log
 tmp/**/*

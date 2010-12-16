@@ -52,6 +52,9 @@ gem 'rdiscount'
 #定时任务
 gem 'whenever'
 
+#数据库注释
+gem "annotate"
+
 group :development, :test do
   gem 'autotest'
   gem 'rspec-rails',             '~> 2.0.0'

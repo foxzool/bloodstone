@@ -1,13 +1,9 @@
 title: 'ZoOL => Blog'
-header: '我的博客'
-description: 'Power by bloodstone'
-site_url: 'http://blog.zool.it'
-
-version: '0.1.1'
-will_paginate:
-  per_page: 10
+header: 'Powered by bloodstone'
+description: 'rails开发相关'
+site_url: 'http://blog.zool.it'  #最后不要带 /
 author: 'ZoOL'
 google_analytics: 'UA-XXXXX-X'
 
-links:
-  friends: [{name: 'ZoOL => Blog', url: 'http://blog.zool.it'}, {name: 'ZoOL => Project', url: 'http://project.zool.it'}]
+will_paginate:
+  per_page: 10

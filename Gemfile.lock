@@ -31,6 +31,7 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     acts-as-taggable-on (2.0.6)
+    annotate (2.4.0)
     arel (2.0.6)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -152,6 +153,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
+  annotate
   autotest
   cancan
   capybara

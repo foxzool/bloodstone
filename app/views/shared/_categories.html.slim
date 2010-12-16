@@ -1,5 +1,3 @@
 ul
   - Category.all.each do |category|
-      li= link_to category.name, "/categories/#{category.slug}" 
-
-
+      li= link_to category.name, category_posts_path(category)

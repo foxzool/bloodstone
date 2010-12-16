@@ -1,7 +1,7 @@
 title: 'ZoOL => Blog'
-header: '我的博客'
-description: 'Power by bloodstone'
-site_url: 'http://blog.zool.it' #最后不要带 /
+header: 'Powered by bloodstone'
+description: 'rails开发相关'
+site_url: 'http://blog.zool.it'  #最后不要带 /
 
 version: '0.1.1'
 will_paginate:

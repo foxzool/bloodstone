@@ -1,5 +1,6 @@
 .bundle
 .project
+nbproject
 config/settings.yml
 config/database.yml
 public/robots.txt

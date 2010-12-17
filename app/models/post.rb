@@ -11,9 +11,9 @@ class Post < ActiveRecord::Base
   cattr_reader :per_page
   @@per_page = Settings.will_paginate.per_page
 
-  validates_presence_of :title, :body
+  validates :title, :body, :presence => true
 
-  named_scope :by_date, :order => "created_at DESC"
+  scope :by_date, :order => "created_at DESC"
   attr_accessor :newtags
   
   def render_html

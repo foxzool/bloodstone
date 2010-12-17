@@ -1,6 +1,6 @@
 title: 'ZoOL => Blog'
-header: 'Powered by bloodstone'
 description: 'rails开发相关'
+keywords: 'rails,ruby,git,ubuntu,gem,bloodstone'
 site_url: 'http://blog.zool.it'  #最后不要带 /
 author: 'ZoOL'
 google_analytics: 'UA-XXXXX-X'

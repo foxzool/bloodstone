@@ -49,6 +49,9 @@ gem "rails_config"
 #markdown解析
 gem 'rdiscount'
 
+#代码高亮
+gem 'coderay'
+
 #定时任务
 gem 'whenever'
 

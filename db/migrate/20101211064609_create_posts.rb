@@ -9,9 +9,12 @@ class CreatePosts < ActiveRecord::Migration
 
       t.timestamps
     end
+    
+		add_index :posts, :user_id
   end
 
   def self.down
+		remove_index :posts, :user_id
     drop_table :posts
   end
 end

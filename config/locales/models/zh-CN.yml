@@ -9,7 +9,9 @@
         title: '标题'
         body: '内容'
         categories: '所属目录'
+        slug: 'url戳'
         tags: '标签'
+        newtags: '新增标签'
       user:
         login: '用户名或邮箱'
         username: '用户名'
@@ -19,4 +21,4 @@
         remember_me: '保持登录'
       category:
         name: '名称'
-        slug: 'slug'
+        slug: 'url戳'

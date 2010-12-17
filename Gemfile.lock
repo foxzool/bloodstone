@@ -51,6 +51,7 @@ GEM
     celerity (0.8.5)
     childprocess (0.1.4)
       ffi (~> 0.6.3)
+    coderay (0.9.5)
     culerity (0.2.12)
     devise (1.2.rc)
       bcrypt-ruby (~> 2.1.2)
@@ -157,6 +158,7 @@ DEPENDENCIES
   autotest
   cancan
   capybara
+  coderay
   devise (~> 1.2.rc)
   easy_roles
   factory_girl

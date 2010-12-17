@@ -13,7 +13,6 @@ menu, nav, section, summary, time, mark, audio, video {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
-  color: #A6E22E;
 }                  
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
     display:block;
@@ -203,36 +202,13 @@ padding-bottom: 10px;
 overflow: hidden;
 }
 
-#main pre {
-  line-height: 1.5em;
-  font-size: 10px;
-  white-space: normal;
-  padding: 0;
-  background: #4A4A4A;
-  border: 1px solid #222;
-}
-pre ol {
-  list-style: decimal;
-  list-style-position: outside;
-  padding: 0;
-  margin: 0;
-}
-#main pre ol li {
-  margin: 0 0 0 35px;
-  padding: 0;
-  color: #333;
-  clear: none;
-}
-pre ol li div {
-  color:#000;
-}
-
 /** ARTICLES **/
 #content {
 float: left;
 width: 585px;
 margin:10px 0 10px 0;
 padding:5px 20px 5px 20px;
+color: #A6E22E;
 border-right: #307437;
 border-style: dashed;
 }
@@ -276,6 +252,7 @@ padding:0;
 .articlecontent {
   display: block;
   padding-bottom: 10px;
+  color: #A6E22E;
 }
 
 
@@ -321,3 +298,41 @@ aside section h3 {
 margin-bottom: 10px;
 color: #F92672;
 }
+
+.CodeRay {     
+background-color: #232323;     
+border: 1px solid black;     
+font-family: 'Courier New', 'Terminal', monospace;     
+color: #E6E0DB;     
+padding: 3px 5px;     
+overflow: auto;     
+font-size: 12px;     
+margin: 12px 0;
+/* curved border radius */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}     
+.CodeRay pre {     
+margin: 0px;     
+padding: 0px;     
+}     
+  
+.CodeRay .an { color:#E7BE69 }                      /* html 属性*/    
+.CodeRay .c  { color:#BC9358; font-style: italic; } /* 注释 */    
+.CodeRay .ch { color:#509E4F }                      /* 转义字符 */    
+.CodeRay .cl { color:#FFF }                         /* 类 */    
+.CodeRay .co { color:#FFF }                         /* 常数 */    
+.CodeRay .fl { color:#A4C260 }                      /* 浮点数 */    
+.CodeRay .fu { color:#FFC56D }                      /* 方法 */    
+.CodeRay .gv { color:#D0CFFE }                      /* 全局变量 */    
+.CodeRay .i  { color:#A4C260 }                      /* 整型 */    
+.CodeRay .il { background:#151515 }                 /* 内联代码 */    
+.CodeRay .iv { color:#D0CFFE }                      /* 实例变量 */    
+.CodeRay .pp { color:#E7BE69 }                      /* 文档类型 */    
+.CodeRay .r  { color:#CB7832 }                      /* 关键字 */    
+.CodeRay .rx { color:#A4C260 }                      /* 正则表达式 */    
+.CodeRay .s  { color:#A4C260 }                      /* 字符串 */    
+.CodeRay .sy { color:#6C9CBD }                      /* 符号 */    
+.CodeRay .ta { color:#E7BE69 }                      /* html 标签 */    
+.CodeRay .pc { color:#6C9CBD }                      /* 布尔型 */    
+

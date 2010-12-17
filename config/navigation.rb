@@ -42,6 +42,7 @@ SimpleNavigation::Configuration.run do |navigation|
     #
     #primary.item :key_1, 'name', url, options
     primary.item :home, t('menu_home'), root_path
+    primary.item :rss, 'RSS', feed_path
     #primary.item :about, t('menu_about'), home_about_path
 
     # Add an item which has a sub navigation (same params, but with block)

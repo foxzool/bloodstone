@@ -7,8 +7,8 @@
   || 
   = link_to rest_i18n('Listing', 'category'), categories_path
   br
-  = link_to t('Sign out'), destroy_user_session_path 
+  = link_to t('Sign out'), logout_path 
 - else
-  =  link_to t('Sign in'), new_user_session_path
+  =  link_to t('Sign in'), login_path
   br
   =  link_to t('Sign up'), new_user_registration_path

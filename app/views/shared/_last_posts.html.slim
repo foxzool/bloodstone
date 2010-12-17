@@ -1,5 +1,5 @@
 ul
   - Post.limit(10).order("created_at desc").each do |post|
-      li= link_to post.title, "/posts/#{post.slug}" 
+      li= link_to post.title, post_path(post)
 
 

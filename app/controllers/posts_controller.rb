@@ -10,7 +10,7 @@ class PostsController < InheritedResources::Base
 
   def update
     @post = Post.find(params[:id])
-    @post.tag_list = params[:post][:newtags]
+    @post.tag_list.add params[:post][:newtags]
     update!
   end
   

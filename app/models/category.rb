@@ -3,6 +3,9 @@ class Category < ActiveRecord::Base
   has_many :posts, :through => :categorizations
 
   has_friendly_id :slug
+
+  validates :name, :slug, :presence => true
+
 end
 
 # == Schema Information

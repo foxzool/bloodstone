@@ -9,6 +9,8 @@ acticle.articlecontent
       |:
       = @post.user.username
     p= raw @post.body_html
+    div.disqus
+      == render 'shared/disqus'
 
 = link_to t('Edit'), edit_post_path(@post)
 ||

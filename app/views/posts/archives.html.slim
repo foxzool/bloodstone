@@ -1,0 +1,8 @@
+div.archives
+  - @post_months.sort.reverse.each do |month, posts|
+    div.month_archives
+      h1= t month.strftime('%B')
+      - for post in posts
+        div.post
+          strong
+            = link_to post.title, post_path(post)

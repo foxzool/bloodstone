@@ -1,5 +1,5 @@
 class PostsController < InheritedResources::Base
-  load_and_authorize_resource :except => :feed
+  load_and_authorize_resource :except => [:feed, :archives]
   
   def create
     @post = Post.new(params[:post])
@@ -15,12 +15,16 @@ class PostsController < InheritedResources::Base
   end
   
   def feed
-    @posts = 
     @posts = Post.select("title, id, body, created_at").order("created_at DESC").limit(20) 
     respond_to do |format|
       format.rss { render :layout => false } #index.rss.builder
     end
-end
+  end
+
+  def archives
+    @posts = Post.select('id, title, created_at').order("created_at desc")
+    @post_months = @posts.group_by { |t| t.created_at.beginning_of_month }
+  end
 
   protected
 

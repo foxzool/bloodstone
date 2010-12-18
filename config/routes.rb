@@ -6,6 +6,7 @@ Bloodstone::Application.routes.draw do
   get "feed" => 'posts#feed', :defaults => { :format => 'rss' }
   get 'tags/:name' => 'tags#posts_list' , :as => 'tag_posts'
   get 'categories/:id' => 'categories#posts_list', :as => 'category_posts'
+  get 'archives' => 'posts#archives', :as => 'month_posts'
   
   resources 'posts'
 

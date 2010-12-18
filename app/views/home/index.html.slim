@@ -1,18 +1,17 @@
-- @posts.each do |post|
-  acticle.articlecontent
-    h2
-      = link_to post.title, post_path(post)
-    div.info
-      span.date
-        = l post.created_at, :format => :short
-      |    
-      span.author
-        = t('author')
-      |:
-      = post.user.username
-    p
-      = raw post.body_html
+acticle.articlecontent
+  h2
+    = link_to @post.title, post_path(@post)
+  div.info
+    span.date
+      = l @post.created_at, :format => :short
+    |
+    span.author
+      = t('author')
+    |:
+    = @post.user.username
+  p
+    = raw @post.body_html
+
+= link_to t('read more'), month_posts_path
 
 
-
-= will_paginate @posts

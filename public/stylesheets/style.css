@@ -15,7 +15,7 @@ menu, nav, section, summary, time, mark, audio, video {
   background:transparent;
 }                  
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
-    display:block;
+  display:block;
 }
 nav ul { list-style:none; }
 blockquote, q { quotes:none; }
@@ -81,16 +81,16 @@ button {  width: auto; overflow: visible; }
 .clearfix { zoom: 1; }
 
 @media all and (orientation:portrait) { 
-  
+
 }
 
 @media all and (orientation:landscape) { 
-  
+
 }
 
 @media screen and (max-device-width: 480px) {
-  
-  
+
+
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
@@ -109,9 +109,9 @@ button {  width: auto; overflow: visible; }
 }
 
 
- /* Primary Styles
-    Author: 
- */
+/* Primary Styles
+   Author:
+*/
 
 #container {
   width: 940px;
@@ -124,128 +124,129 @@ button {  width: auto; overflow: visible; }
 /* nav */
 
 nav .menu {
-width: 940px;
-float: right;
-font-size: 16px;
-font-weight: bold;
-border-bottom: #307437;
-border-style: dashed;
+  width: 940px;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 nav .menu ul {
-list-style: none;
-margin: 0;
-text-align: left;
+  list-style: none;
+  margin: 0;
+  text-align: left;
 }
 
 nav .menu li {
-display: inline;
-position: relative;
+  display: inline;
+  position: relative;
 }
 
 nav .menu a {
-color: #ddd;
-padding: 0 15px;
-line-height: 38px;
-text-decoration: none;
+  color: #ddd;
+  padding: 0 15px;
+  line-height: 38px;
+  text-decoration: none;
 }
 
 nav .menu a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* header */
 
 header {
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 header h1, header h2 {
-padding: 0 0 0 30px;
-line-height: normal;
+  padding: 0 0 0 30px;
+  line-height: normal;
 }
 
 header h1 { 	
-float: left;
-margin: 10px 0 0 10px;
-width: 700px;
-font-size: 32px;
-line-height: 36px;
+  float: left;
+  margin: 10px 0 0 10px;
+  width: 700px;
+  font-size: 32px;
+  line-height: 36px;
 }
 
 header h1 a:link, header h1 a:visited {
-color: #E6DB74;
-font-weight: bold;
-text-decoration: none;
+  color: #E6DB74;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 header h1 a:hover { 
-text-decoration: none; 
+  text-decoration: none;
 }
 
 header h2 {
-padding: 20px 0 10px 10px;
-clear: right;
+  padding: 20px 0 10px 10px;
+  clear: right;
 }
 
 header h2 a:link, header h2 a:visited {
-font-style: italic;
-font-size: 14px;
-color: #777;
-text-decoration: none;
+  font-style: italic;
+  font-size: 14px;
+  color: #777;
+  text-decoration: none;
 }
 
 #main {
-width: 940px;
-margin: 0 auto;
-padding-bottom: 10px;
-overflow: hidden;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border-top: #307437;
+  border-bottom: #307437;
+  border-style: dashed;
 }
 
 /** ARTICLES **/
 #content {
-float: left;
-width: 585px;
-margin:10px 0 10px 0;
-padding:5px 20px 5px 20px;
-color: #A6E22E;
-border-right: #307437;
-border-style: dashed;
+  float: left;
+  width: 585px;
+  margin:10px 0 10px 0;
+  padding:5px 20px 5px 20px;
+  color: #A6E22E;
+  border-right: #307437;
+  border-style: dashed;
 }
 
 .alignleft, img.alignleft {
-display: inline;
-float: left;
-margin-right: 24px;
-margin-top: 4px;
+  display: inline;
+  float: left;
+  margin-right: 24px;
+  margin-top: 4px;
 }
 
 .alignright, img.alignright {
-display: inline;
-float: right;
-margin-left: 24px;
-margin-top: 4px;
+  display: inline;
+  float: right;
+  margin-left: 24px;
+  margin-top: 4px;
 }
 
 .aligncenter, img.aligncenter {
-clear: both;
-display: block;
-margin-left: auto;
-margin-right: auto;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.alignleft, img.alignright, img.aligncenter {
-margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 /* sidebar and widget blocks */
 
 aside {
-float: right;
-text-align: left;
-width: 290px;
-margin:0;
-padding:0;
+  float: right;
+  text-align: left;
+  width: 290px;
+  margin:0;
+  padding:0;
 }
 
 /* article */
@@ -257,75 +258,75 @@ padding:0;
 }
 
 .articlecontent .info {
-    font-size: x-small;
-    color: #777777;
+  font-size: x-small;
+  color: #777777;
 }
 
 .info .date {
-    float: left;
-    margin-right: 15px;
+  float: left;
+  margin-right: 15px;
 }
 
 .articlecontent p a {
-color: #307437;
+  color: #307437;
 }
 
 .articlecontent p a:hover {
-color: #000;
+  color: #000;
 }
 
 /* box shadow on pics */
 .articlecontent img {
-/* curved border radius */
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
+  /* curved border radius */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 /* sidebar */
 aside section {
-margin: 10px 0 0 0;
-padding: 10px 10px;
+  margin: 10px 0 0 0;
+  padding: 10px 10px;
 
 }
 
 aside section ul {
-margin: 0 0 0 20px;
-color: #307437;
+  margin: 0 0 0 20px;
+  color: #307437;
 }
 
 aside section ul li a {
-display: block;
-text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
 aside section ul li a:hover {
-background-color: #307437;
-color: #fff;
+  background-color: #307437;
+  color: #fff;
 }
 
 aside section h3 {
-margin-bottom: 10px;
-color: #F92672;
+  margin-bottom: 10px;
+  color: #F92672;
 }
 
 .CodeRay {     
-background-color: #232323;     
-border: 1px solid black;     
-font-family: 'Courier New', 'Terminal', monospace;     
-color: #E6E0DB;     
-padding: 3px 5px;     
-overflow: auto;     
-font-size: 12px;     
-margin: 12px 0;
-/* curved border radius */
+  background-color: #232323;
+  border: 1px solid black;
+  font-family: 'Courier New', 'Terminal', monospace;
+  color: #E6E0DB;
+  padding: 3px 5px;
+  overflow: auto;
+  font-size: 12px;
+  margin: 12px 0;
+  /* curved border radius */
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }     
 .CodeRay pre {     
-margin: 0px;     
-padding: 0px;     
+  margin: 0px;
+  padding: 0px;
 }     
-  
+
 .CodeRay .an { color:#E7BE69 }                      /* html 属性*/    
 .CodeRay .c  { color:#BC9358; font-style: italic; } /* 注释 */    
 .CodeRay .ch { color:#509E4F }                      /* 转义字符 */    
@@ -345,3 +346,24 @@ padding: 0px;
 .CodeRay .ta { color:#E7BE69 }                      /* html 标签 */    
 .CodeRay .pc { color:#6C9CBD }                      /* 布尔型 */    
 
+
+#footer-area {
+  font-style: italic;
+  padding: 18px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.archives h1 {
+  font-size: large;
+  color: #F92672;
+}
+
+.archives .post, .month_archives {
+  margin-top: 10px;
+}
+
+.archives a {
+  text-decoration: none;
+  color: #A6E22E;
+}

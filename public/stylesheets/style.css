@@ -253,9 +253,18 @@ padding:0;
   display: block;
   padding-bottom: 10px;
   color: #A6E22E;
+  line-height: 1.5;
 }
 
+.articlecontent .info {
+    font-size: x-small;
+    color: #777777;
+}
 
+.info .date {
+    float: left;
+    margin-right: 15px;
+}
 
 .articlecontent p a {
 color: #307437;

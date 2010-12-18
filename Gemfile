@@ -58,6 +58,14 @@ gem 'whenever'
 #数据库注释
 gem "annotate"
 
+#服务端
+gem 'unicorn'
+
+group :development do
+  #N+1查询处理
+  gem 'bullet'
+end
+
 group :development, :test do
   gem 'autotest'
   gem 'rspec-rails',             '~> 2.0.0'

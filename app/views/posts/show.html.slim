@@ -1,5 +1,13 @@
 acticle.articlecontent
     h2= link_to @post.title, post_path(@post)
+    div.info
+      span.date
+        = l @post.created_at, :format => :short
+      |
+      span.author
+        = t('author')
+      |:
+      = @post.user.username
     p= raw @post.body_html
 
 = link_to t('Edit'), edit_post_path(@post)

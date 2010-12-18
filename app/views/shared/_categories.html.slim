@@ -1,3 +1,3 @@
 ul
   - Category.all.each do |category|
-      li= link_to category.name, category_posts_path(category)
+      li= link_to (category.name + "(#{category.posts.count})" ), category_posts_path(category)

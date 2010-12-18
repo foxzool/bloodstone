@@ -33,6 +33,7 @@ module Bloodstone
     # config.i18n.default_locale = :de
     config.i18n.load_path += Dir[Rails.root.join('config','locales', '**', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :'zh-CN'
+    
 
     # JavaScript files you want as :defaults (application.js is always included).
     config.action_view.javascript_expansions[:defaults] = %w(rails)
@@ -46,6 +47,11 @@ module Bloodstone
     config.after_initialize do
       WillPaginate::ViewHelpers.pagination_options[:previous_label]=I18n.t("will_paginate.prev")
       WillPaginate::ViewHelpers.pagination_options[:next_label]=I18n.t("will_paginate.next")
+      config.active_record.default_timezone = :local
+      config.i18n.default_locale = :'zh-CN'
     end
   end
+
+  VERSION = File.read(File.dirname(__FILE__) + '/../VERSION').strip
+
 end

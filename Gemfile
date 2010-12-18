@@ -30,6 +30,9 @@ gem 'sitemap_generator'
 #rest格式生成器
 gem 'inherited_resources',       '~> 1.1.2'
 
+#时间扩展
+gem 'by_star'
+
 #分页
 gem "will_paginate", "~> 3.0.pre2"
 

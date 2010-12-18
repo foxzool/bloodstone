@@ -53,6 +53,8 @@ http://project.zool.it/projects/bloodstone
 
 bloodstone的代码版本控制遵循git标准化开发流程，详情请参考 http://blog.zool.it/posts/11
 
+bloodstone的版本号发布遵循 Semantic Versioning Specification ，详情请参考 http://semver.org/
+
 #如果有疑问，可以
 
 加我的gtalk直接沟通: zhooul#gmail.com  

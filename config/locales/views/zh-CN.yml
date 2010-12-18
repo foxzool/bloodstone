@@ -5,10 +5,12 @@
   "will_paginate":
     "next": '下一页'
     "prev": '上一页'
+
   "Categories": '目录'
   "Dashboard": '控制面板'
   "Recent Articles": '最近文章'
   "Tag Cloud": '标签云'
+
   "New": '新建'
   "Show": '详情'
   "Edit": '编辑'
@@ -29,3 +31,5 @@
   "New %{resource}": "新建%{resource}"  
   "Listing %{resource}": "%{resource}列表"  
   "Editing %{resource}": "编辑%{resource}"  
+
+  "author": "作者"

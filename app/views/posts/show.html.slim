@@ -11,7 +11,7 @@ acticle.articlecontent
     p= raw @post.body_html
     div.disqus
       == render 'shared/disqus'
-
-= link_to t('Edit'), edit_post_path(@post)
-||
+- if can? :update, @post
+  = link_to t('Edit'), edit_post_path(@post)
+  ||
 = link_to t('Back'), posts_path

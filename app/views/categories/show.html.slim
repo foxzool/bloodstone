@@ -6,7 +6,7 @@ p
   b= t("activerecord.attributes.category.slug")
   |:
   = @category.slug
-
-= link_to t('Edit'), edit_category_path(@category)
-||
+- if can? :update, @category
+  = link_to t('Edit'), edit_category_path(@category)
+  ||
 = link_to t('Back'), categories_path

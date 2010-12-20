@@ -1,6 +1,19 @@
 class Categorization < ActiveRecord::Base
   belongs_to :post
   belongs_to :category
+
+  after_create  :increment_counter_cache
+  after_destroy :decrement_counter_cache
+
+  private
+  def decrement_counter_cache
+    Category.decrement_counter("posts_count", category_id)
+  end
+
+  def increment_counter_cache
+    Category.increment_counter("posts_count", category_id)
+  end
+
 end
 
 # == Schema Information

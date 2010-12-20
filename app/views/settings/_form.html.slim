@@ -1,0 +1,10 @@
+= simple_form_for(@setting) do |f|
+  = f.error_notification
+
+  div class="inputs"
+              = f.input :var
+              = f.input :value
+      
+  div class="actions"
+    = f.button :submit
+

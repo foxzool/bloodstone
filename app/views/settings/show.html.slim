@@ -1,0 +1,12 @@
+p
+  b= t("activerecord.attributes.setting.var")
+  |:
+  = @setting.var
+p
+  b= t("activerecord.attributes.setting.value")
+  |:
+  = @setting.value
+
+= link_to t('Edit'), edit_setting_path(@setting)
+||
+= link_to t('Back'), settings_path

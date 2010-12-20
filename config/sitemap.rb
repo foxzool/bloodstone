@@ -1,4 +1,4 @@
-SitemapGenerator::Sitemap.default_host = Settings.site_url
+SitemapGenerator::Sitemap.default_host = Setting.site_url
 
 SitemapGenerator::Sitemap.add_links do |sitemap|
 

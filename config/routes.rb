@@ -17,8 +17,7 @@ Bloodstone::Application.routes.draw do
   devise_for :users
 
   scope '/admin' do
-    resources 'categories'
-    resources 'tags'
+    resources 'categories', 'tags', 'settings'
   end
   
     

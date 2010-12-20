@@ -1,5 +1,6 @@
 .bundle
 .project
+.idea
 nbproject
 config/settings.yml
 config/database.yml

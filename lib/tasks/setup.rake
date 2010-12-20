@@ -12,7 +12,7 @@ namespace :bloodstone do
     robots = <<EOF
 User-agent: *
 Allow: /
-Sitemap: #{Settings.site_url}/sitemap_index.xml.gz
+Sitemap: #{Setting.site_url}/sitemap_index.xml.gz
 EOF
     sh "echo '#{robots}' > #{Rails.root + "public/robots.txt"} "
     sh "whenever . --set environment=#{Rails.env}"

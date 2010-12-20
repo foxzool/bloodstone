@@ -102,8 +102,6 @@ GEM
       activesupport (= 3.0.3)
       bundler (~> 1.0)
       railties (= 3.0.3)
-    rails_config (0.2.1)
-      activesupport (~> 3.0)
     railties (3.0.3)
       actionpack (= 3.0.3)
       activesupport (= 3.0.3)
@@ -179,7 +177,6 @@ DEPENDENCIES
   inherited_resources (~> 1.1.2)
   mysql2
   rails (= 3.0.3)
-  rails_config
   rdiscount
   rspec-rails (~> 2.0.0)
   simple-navigation

@@ -4,6 +4,7 @@
       post: '文章'
       user: '用户'
       category: '目录'
+      setting: '配置'
     attributes:
       post:
         title: '标题'
@@ -22,3 +23,6 @@
       category:
         name: '名称'
         slug: 'url戳'
+      setting:
+        var: '配置名'
+        value: '值'

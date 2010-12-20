@@ -1,18 +1,11 @@
-h1 = rest_i18n("Listing", "tag")
-
 table
-  tr
-    th = t("activerecord.attributes.tag.name")
-    th
-    th
-    th
-
   - @tags.each do |tag|
     tr
       td= tag.name
       td= link_to t('Show'), tag
-      td= link_to t('Edit'), edit_tag_path(tag)
-      td= link_to t('Destroy'), tag, :confirm => t('Are you sure?'), :method => :delete
+      - if can? :manage, @category
+        td= link_to t('Edit'), edit_tag_path(tag)
+        td= link_to t('Destroy'), tag, :confirm => t('Are you sure?'), :method => :delete
 
 br
 

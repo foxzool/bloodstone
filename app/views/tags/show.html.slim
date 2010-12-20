@@ -2,7 +2,7 @@ p
   b= t("activerecord.attributes.tag.name")
   |:
   = @tag.name
-
-= link_to t('Edit'), edit_tag_path(@tag)
-||
+- if can? :update, @tag
+  = link_to t('Edit'), edit_tag_path(@tag)
+  ||
 = link_to t('Back'), tags_path

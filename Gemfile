@@ -46,9 +46,6 @@ gem 'simple-navigation'
 #form生成工具
 gem "simple_form"
 
-#全局配置参数工具
-gem "rails_config"
-
 #markdown解析
 gem 'rdiscount'
 

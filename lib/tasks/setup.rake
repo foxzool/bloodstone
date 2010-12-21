@@ -3,7 +3,6 @@ namespace :bloodstone do
   task :setup_blog do
     ENV['db'] ||= 'mysql'
     cp (Rails.root + "config/database.yml.#{ENV['db']}.example"), (Rails.root + "config/database.yml")
-    cp (Rails.root + "config/settings.yml.example"), (Rails.root + "config/settings.yml")
     puts 'setup success! please modify config/database.yml and config/settings.yml'
   end
 
@@ -27,4 +26,10 @@ EOF
     user.save
     puts "add #{ENV['username']} as admin success!"
   end
+
+  desc "update tool"
+  task  :update, :needs => :environment do
+    Setting.ensure_configs
+  end
+
 end

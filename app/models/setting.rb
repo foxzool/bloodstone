@@ -47,8 +47,8 @@ class Setting < ActiveRecord::Base
 
   #retrieve a setting value by [] notation
   def self.[](var_name)
-    if var = object(var_name)
-      var.value
+    if var_value = object(var_name)
+      var_value
     elsif @@defaults[var_name.to_s]
       @@defaults[var_name.to_s]
     else
@@ -67,7 +67,13 @@ class Setting < ActiveRecord::Base
 
   #retrieve the actual Setting record
   def self.object(var_name)
-    Setting.find_by_var(var_name.to_s)
+    var_name = var_name.to_s
+    getvalue = Rails.cache.read(var_name)
+    unless getvalue
+      getvalue =  Setting.find_by_var(var_name).value
+      Rails.cache.write(var_name, getvalue)
+    end
+    return getvalue
   end
 
   #get the value field, YAML decoded
@@ -80,10 +86,39 @@ class Setting < ActiveRecord::Base
     self[:value] = new_value.to_yaml
   end
 
-  #Deprecated!
-  def self.reload # :nodoc:
-    self
+  
+  #确保配置默认值
+  def self.ensure_configs
+    #网站标题
+    Setting.title ||= 'ZoOL => Blog'
+
+    #网站描述
+    Setting.description ||= 'rails开发相关'
+
+    #关键字
+    Setting.keywords ||= 'rails,ruby,git,ubuntu,gem,bloodstone'
+
+    #网站地址
+    Setting.site_url ||= 'http://blog.zool.it'
+
+    #作者
+    Setting.author ||= 'ZoOL'
+
+    #google分析
+    Setting.google_analytics ||= 'UA-XXXXX-X'
+
+    #disqus
+    Setting.disqus_shortname ||= 'zoolblog'
+    
+    #redis配置
+    Setting.redis_config ||= 'redis://localhost:/6379/bloodstone'
+
+    return true
   end
+
+
+
+
 end
 
 # == Schema Information

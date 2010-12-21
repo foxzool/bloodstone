@@ -16,21 +16,22 @@
     rake db:migrate
     
     rake bloodstone:setup_blog db=mysql (可选项=> mysql, postgresql, sqlite3)
-    
-3. 配置网站
 
-    编辑config/settings.yml，根据实际情况进行配置。
-    
-4. 设置系统
+    rake bloodstone:update
 
-    rake bloodstone:setup_tools
-    
-5. 提升管理员
+3. 提升管理员
 
 在页面注册完毕之后, 执行
 
    RAILS_ENV=production rake bloodstone:setup_admin user=username (username需要提升的用户名)
-   
+    
+4. 配置网站
+
+    编辑进入配置设置页面，根据实际情况进行配置。
+    
+5. 设置系统
+
+    rake bloodstone:setup_tools
 
 #欢迎参与
 如果您对开发此产品有兴趣，可以：

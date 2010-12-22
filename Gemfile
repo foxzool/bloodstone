@@ -72,4 +72,9 @@ group :development, :test do
   gem 'steak'
   gem 'capybara'
   gem 'factory_girl'
+
+  gem 'redgreen' #更好的颜色输出
+  gem 'autotest-growl'
+  gem 'autotest-notification'
+
 end

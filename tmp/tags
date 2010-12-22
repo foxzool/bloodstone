@@ -1,0 +1,85 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Ability	/home/zool/workplace/bloodstone/app/models/ability.rb	/^class Ability$/;"	c
+ActsAsTaggableOnMigration	/home/zool/workplace/bloodstone/db/migrate/20101215030925_acts_as_taggable_on_migration.rb	/^class ActsAsTaggableOnMigration < ActiveRecord::Migration$/;"	c
+AddRolesToUser	/home/zool/workplace/bloodstone/db/migrate/20101213054810_add_roles_to_user.rb	/^class AddRolesToUser < ActiveRecord::Migration$/;"	c
+Application	/home/zool/workplace/bloodstone/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Bloodstone
+ApplicationController	/home/zool/workplace/bloodstone/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/home/zool/workplace/bloodstone/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationResponder	/home/zool/workplace/bloodstone/lib/application_responder.rb	/^class ApplicationResponder < ActionController::Responder$/;"	c
+Bloodstone	/home/zool/workplace/bloodstone/config/application.rb	/^module Bloodstone$/;"	m
+CategoriesController	/home/zool/workplace/bloodstone/app/controllers/categories_controller.rb	/^class CategoriesController < InheritedResources::Base$/;"	c
+CategoriesHelper	/home/zool/workplace/bloodstone/app/helpers/categories_helper.rb	/^module CategoriesHelper$/;"	m
+Categorization	/home/zool/workplace/bloodstone/app/models/categorization.rb	/^class Categorization < ActiveRecord::Base$/;"	c
+Category	/home/zool/workplace/bloodstone/app/models/category.rb	/^class Category < ActiveRecord::Base$/;"	c
+CreateCategories	/home/zool/workplace/bloodstone/db/migrate/20101214031407_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration$/;"	c
+CreateCategorizations	/home/zool/workplace/bloodstone/db/migrate/20101212043028_create_categorizations.rb	/^class CreateCategorizations < ActiveRecord::Migration$/;"	c
+CreatePosts	/home/zool/workplace/bloodstone/db/migrate/20101211064609_create_posts.rb	/^class CreatePosts < ActiveRecord::Migration$/;"	c
+CreateSettings	/home/zool/workplace/bloodstone/db/migrate/20101220064942_create_settings.rb	/^class CreateSettings < ActiveRecord::Migration$/;"	c
+CreateSlugs	/home/zool/workplace/bloodstone/db/migrate/20101214062757_create_slugs.rb	/^class CreateSlugs < ActiveRecord::Migration$/;"	c
+DeviseCreateUsers	/home/zool/workplace/bloodstone/db/migrate/20101212062556_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c
+HelperMethods	/home/zool/workplace/bloodstone/spec/acceptance/support/helpers.rb	/^module HelperMethods$/;"	m
+HomeController	/home/zool/workplace/bloodstone/app/controllers/home_controller.rb	/^class HomeController < ApplicationController$/;"	c
+HomeHelper	/home/zool/workplace/bloodstone/app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
+NavigationHelpers	/home/zool/workplace/bloodstone/spec/acceptance/support/paths.rb	/^module NavigationHelpers$/;"	m
+Post	/home/zool/workplace/bloodstone/app/models/post.rb	/^class Post < ActiveRecord::Base$/;"	c
+PostsController	/home/zool/workplace/bloodstone/app/controllers/posts_controller.rb	/^class PostsController < InheritedResources::Base$/;"	c
+PostsHelper	/home/zool/workplace/bloodstone/app/helpers/posts_helper.rb	/^module PostsHelper$/;"	m
+Setting	/home/zool/workplace/bloodstone/app/models/setting.rb	/^class Setting < ActiveRecord::Base$/;"	c
+SettingNotFound	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  class SettingNotFound < RuntimeError; end$/;"	c	class:Setting
+SettingsController	/home/zool/workplace/bloodstone/app/controllers/settings_controller.rb	/^class SettingsController < InheritedResources::Base$/;"	c
+SettingsHelper	/home/zool/workplace/bloodstone/app/helpers/settings_helper.rb	/^module SettingsHelper$/;"	m
+TagsController	/home/zool/workplace/bloodstone/app/controllers/tags_controller.rb	/^class TagsController < InheritedResources::Base$/;"	c
+TagsHelper	/home/zool/workplace/bloodstone/app/helpers/tags_helper.rb	/^module TagsHelper$/;"	m
+User	/home/zool/workplace/bloodstone/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+[]	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def self.[](var_name)$/;"	F	class:Setting
+[]=	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def self.[]=(var_name, value)$/;"	F	class:Setting
+all	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def self.all$/;"	F	class:Setting
+archives	/home/zool/workplace/bloodstone/app/controllers/posts_controller.rb	/^  def archives$/;"	f	class:PostsController
+coderay	/home/zool/workplace/bloodstone/app/models/post.rb	/^  def coderay(text)$/;"	f	class:Post
+collection	/home/zool/workplace/bloodstone/app/controllers/posts_controller.rb	/^  def collection$/;"	f	class:PostsController
+create	/home/zool/workplace/bloodstone/app/controllers/posts_controller.rb	/^  def create$/;"	f	class:PostsController
+decrement_counter_cache	/home/zool/workplace/bloodstone/app/models/categorization.rb	/^  def decrement_counter_cache$/;"	f	class:Categorization
+destroy	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def self.destroy(var_name)$/;"	F	class:Setting
+down	/home/zool/workplace/bloodstone/db/migrate/20101211064609_create_posts.rb	/^  def self.down$/;"	F	class:CreatePosts
+down	/home/zool/workplace/bloodstone/db/migrate/20101212043028_create_categorizations.rb	/^  def self.down$/;"	F	class:CreateCategorizations
+down	/home/zool/workplace/bloodstone/db/migrate/20101212062556_devise_create_users.rb	/^  def self.down$/;"	F	class:DeviseCreateUsers
+down	/home/zool/workplace/bloodstone/db/migrate/20101213054810_add_roles_to_user.rb	/^  def self.down$/;"	F	class:AddRolesToUser
+down	/home/zool/workplace/bloodstone/db/migrate/20101214031407_create_categories.rb	/^  def self.down$/;"	F	class:CreateCategories
+down	/home/zool/workplace/bloodstone/db/migrate/20101214062757_create_slugs.rb	/^  def self.down$/;"	F	class:CreateSlugs
+down	/home/zool/workplace/bloodstone/db/migrate/20101215030925_acts_as_taggable_on_migration.rb	/^  def self.down$/;"	F	class:ActsAsTaggableOnMigration
+down	/home/zool/workplace/bloodstone/db/migrate/20101220064942_create_settings.rb	/^  def self.down$/;"	F	class:CreateSettings
+ensure_configs	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def self.ensure_configs$/;"	F	class:Setting
+feed	/home/zool/workplace/bloodstone/app/controllers/posts_controller.rb	/^  def feed$/;"	f	class:PostsController
+find_for_database_authentication	/home/zool/workplace/bloodstone/app/models/user.rb	/^  def self.find_for_database_authentication(conditions)$/;"	F	class:User
+homepage	/home/zool/workplace/bloodstone/spec/acceptance/support/paths.rb	/^  def homepage$/;"	f	class:NavigationHelpers
+increment_counter_cache	/home/zool/workplace/bloodstone/app/models/categorization.rb	/^  def increment_counter_cache$/;"	f	class:Categorization
+index	/home/zool/workplace/bloodstone/app/controllers/home_controller.rb	/^  def index$/;"	f	class:HomeController
+initialize	/home/zool/workplace/bloodstone/app/models/ability.rb	/^  def initialize(user)$/;"	f	class:Ability
+markdown	/home/zool/workplace/bloodstone/app/models/post.rb	/^  def markdown(text)$/;"	f	class:Post
+method_missing	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def self.method_missing(method, *args)$/;"	F	class:Setting
+mock_category	/home/zool/workplace/bloodstone/spec/controllers/categories_controller_spec.rb	/^  def mock_category(stubs={})$/;"	f
+mock_post	/home/zool/workplace/bloodstone/spec/controllers/posts_controller_spec.rb	/^  def mock_post(stubs={})$/;"	f
+mock_setting	/home/zool/workplace/bloodstone/spec/controllers/settings_controller_spec.rb	/^  def mock_setting(stubs={})$/;"	f
+mock_tag	/home/zool/workplace/bloodstone/spec/controllers/tags_controller_spec.rb	/^  def mock_tag(stubs={})$/;"	f
+object	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def self.object(var_name)$/;"	F	class:Setting
+posts_list	/home/zool/workplace/bloodstone/app/controllers/categories_controller.rb	/^  def posts_list$/;"	f	class:CategoriesController
+posts_list	/home/zool/workplace/bloodstone/app/controllers/tags_controller.rb	/^  def posts_list$/;"	f	class:TagsController
+render_html	/home/zool/workplace/bloodstone/app/models/post.rb	/^  def render_html$/;"	f	class:Post
+render_markdown	/home/zool/workplace/bloodstone/app/helpers/application_helper.rb	/^  def render_markdown(body)$/;"	f	class:ApplicationHelper
+rest_i18n	/home/zool/workplace/bloodstone/app/helpers/application_helper.rb	/^  def rest_i18n(type, name)$/;"	f	class:ApplicationHelper
+up	/home/zool/workplace/bloodstone/db/migrate/20101211064609_create_posts.rb	/^  def self.up$/;"	F	class:CreatePosts
+up	/home/zool/workplace/bloodstone/db/migrate/20101212043028_create_categorizations.rb	/^  def self.up$/;"	F	class:CreateCategorizations
+up	/home/zool/workplace/bloodstone/db/migrate/20101212062556_devise_create_users.rb	/^  def self.up$/;"	F	class:DeviseCreateUsers
+up	/home/zool/workplace/bloodstone/db/migrate/20101213054810_add_roles_to_user.rb	/^  def self.up$/;"	F	class:AddRolesToUser
+up	/home/zool/workplace/bloodstone/db/migrate/20101214031407_create_categories.rb	/^  def self.up$/;"	F	class:CreateCategories
+up	/home/zool/workplace/bloodstone/db/migrate/20101214062757_create_slugs.rb	/^  def self.up$/;"	F	class:CreateSlugs
+up	/home/zool/workplace/bloodstone/db/migrate/20101215030925_acts_as_taggable_on_migration.rb	/^  def self.up$/;"	F	class:ActsAsTaggableOnMigration
+up	/home/zool/workplace/bloodstone/db/migrate/20101220064942_create_settings.rb	/^  def self.up$/;"	F	class:CreateSettings
+update	/home/zool/workplace/bloodstone/app/controllers/posts_controller.rb	/^  def update$/;"	f	class:PostsController
+value	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def value$/;"	f	class:Setting
+value=	/home/zool/workplace/bloodstone/app/models/setting.rb	/^  def value=(new_value)$/;"	f	class:Setting

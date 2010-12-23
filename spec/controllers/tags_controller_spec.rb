@@ -2,6 +2,11 @@ require 'spec_helper'
 
 describe TagsController do
 
+  before(:each) do
+    @user = Factory.create(:admin)
+    sign_in @user
+  end
+
   def mock_tag(stubs={})
     (@mock_tag ||= mock_model(Tag).as_null_object).tap do |tag|
       tag.stub(stubs) unless stubs.empty?

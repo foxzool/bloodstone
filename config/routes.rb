@@ -8,7 +8,7 @@ Bloodstone::Application.routes.draw do
   get 'categories/:id' => 'categories#posts_list', :as => 'category_posts'
   get 'archives' => 'posts#archives', :as => 'month_posts'
   
-  resources 'posts'
+  resources 'posts', :only => [:index, :show] 
 
   devise_scope :user do
     get "/login" => "devise/sessions#new"
@@ -17,7 +17,7 @@ Bloodstone::Application.routes.draw do
   devise_for :users
 
   scope '/admin' do
-    resources 'categories', 'tags', 'settings'
+    resources 'posts', 'categories', 'tags', 'settings'
   end
   
     

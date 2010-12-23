@@ -68,8 +68,15 @@ end
 
 group :development, :test do
   gem 'autotest'
-  gem 'rspec-rails',             '~> 2.0.0'
+  gem 'rspec-rails',   ">= 2.3.1" 
   gem 'steak'
   gem 'capybara'
   gem 'factory_girl'
+  gem 'factory_girl_rails' 
+  gem 'database_cleaner'
+
+  gem 'redgreen' #更好的颜色输出
+  gem 'autotest-growl'
+  gem 'autotest-notification'
+
 end

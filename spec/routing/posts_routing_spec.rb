@@ -7,8 +7,21 @@ describe PostsController do
       { :get => "/posts" }.should route_to(:controller => "posts", :action => "index")
     end
 
+    it "recognizes by tags and generates #tags_list" do
+      { :get => "/tags/ruby"}.should route_to(:controller => "posts", :action => "tags_list", :name => "ruby")
+    end
+
+
+    it "generates #feed" do
+      { :get => "/feed.rss" }.should route_to(:controller => "posts", :action => "feed", :format=> "rss")
+    end
+
+    it "generates #archives" do
+      { :get => "/archives" }.should route_to(:controller => "posts", :action => "archives")
+    end
+
     it "recognizes and generates #new" do
-      { :get => "/posts/new" }.should route_to(:controller => "posts", :action => "new")
+      { :get => "/admin/posts/new" }.should route_to(:controller => "posts", :action => "new")
     end
 
     it "recognizes and generates #show" do
@@ -16,19 +29,19 @@ describe PostsController do
     end
 
     it "recognizes and generates #edit" do
-      { :get => "/posts/1/edit" }.should route_to(:controller => "posts", :action => "edit", :id => "1")
+      { :get => "/admin/posts/1/edit" }.should route_to(:controller => "posts", :action => "edit", :id => "1")
     end
 
     it "recognizes and generates #create" do
-      { :post => "/posts" }.should route_to(:controller => "posts", :action => "create")
+      { :post => "/admin/posts" }.should route_to(:controller => "posts", :action => "create")
     end
 
     it "recognizes and generates #update" do
-      { :put => "/posts/1" }.should route_to(:controller => "posts", :action => "update", :id => "1")
+      { :put => "/admin/posts/1"}.should route_to(:controller => "posts", :action => "update", :id => "1")
     end
 
     it "recognizes and generates #destroy" do
-      { :delete => "/posts/1" }.should route_to(:controller => "posts", :action => "destroy", :id => "1")
+      { :delete => "admin/posts/1" }.should route_to(:controller => "posts", :action => "destroy", :id => "1")
     end
 
   end

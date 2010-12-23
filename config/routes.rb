@@ -4,11 +4,11 @@ Bloodstone::Application.routes.draw do
   
   get "home/index"
   get "feed" => 'posts#feed', :defaults => { :format => 'rss' }
-  get 'tags/:name' => 'tags#posts_list' , :as => 'tag_posts'
+  get 'tags/:name' => 'posts#tags_list' , :as => 'tag_posts'
   get 'categories/:id' => 'categories#posts_list', :as => 'category_posts'
   get 'archives' => 'posts#archives', :as => 'month_posts'
   
-  resources 'posts', :only => [:index, :show] 
+  resources 'posts'
 
   devise_scope :user do
     get "/login" => "devise/sessions#new"

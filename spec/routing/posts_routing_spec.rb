@@ -7,6 +7,11 @@ describe PostsController do
       { :get => "/posts" }.should route_to(:controller => "posts", :action => "index")
     end
 
+    it "recognizes by tags and generates #tags_list" do
+      { :get => "/tags/ruby"}.should route_to(:controller => "posts", :action => "tags_list", :name => "ruby")
+    end
+
+
     it "generates #feed" do
       { :get => "/feed.rss" }.should route_to(:controller => "posts", :action => "feed", :format=> "rss")
     end
@@ -20,7 +25,7 @@ describe PostsController do
     end
 
     it "recognizes and generates #show" do
-      { :get => "/posts/1", :get => "/admin/posts/1" }.should route_to(:controller => "posts", :action => "show", :id => "1")
+      { :get => "/posts/1" }.should route_to(:controller => "posts", :action => "show", :id => "1")
     end
 
     it "recognizes and generates #edit" do

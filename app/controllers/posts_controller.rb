@@ -1,5 +1,5 @@
 class PostsController < InheritedResources::Base
-  load_and_authorize_resource :except => [:feed, :archives]
+  load_and_authorize_resource :except => [:feed, :archives, :tags_list]
   
   def create
     @post = Post.new(params[:post])
@@ -21,9 +21,16 @@ class PostsController < InheritedResources::Base
     end
   end
 
+  #按月份显示文章
   def archives
     @posts = Post.select('id, title, created_at').order("created_at desc")
     @post_months = @posts.group_by { |t| t.created_at.beginning_of_month }
+  end
+
+  #按标签显示文章
+  def tags_list
+    @posts = Post.tagged_with(params[:name]).paginate(:page => params[:page])
+    render 'posts/index'
   end
 
   protected

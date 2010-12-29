@@ -5,4 +5,5 @@ div.archives
       - for post in posts
         div.post
           strong
-            = link_to post.title, post_path(post)
+            - #TODO 路径格式需要修正
+            = link_to post.title, "/posts/#{post.friendly_id}" 

@@ -7,8 +7,8 @@
   var disqus_shortname = "<%= Setting.disqus_shortname %>"; // required: replace example with your forum shortname
 
   // The following are highly recommended additional parameters. Remove the slashes in front to use.
-   var disqus_identifier = "<%= post_path(@post)  %>";
-   //var disqus_url = 'http://example.com/permalink-to-page.html';
+   var disqus_identifier = "<%= post_path(@post.id)  %>";
+   var disqus_url = "<%= post_path(@post.friendly_id)  %>";
 
   /* * * DON'T EDIT BELOW THIS LINE * * */
   (function() {

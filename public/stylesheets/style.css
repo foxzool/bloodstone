@@ -201,6 +201,7 @@ header h2 a:link, header h2 a:visited {
   border-top: #307437;
   border-bottom: #307437;
   border-style: dashed;
+  clear: both;
 }
 
 /** ARTICLES **/

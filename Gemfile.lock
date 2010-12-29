@@ -35,9 +35,6 @@ GEM
     arel (2.0.6)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
-    autotest-growl (0.2.9)
-    autotest-notification (2.3.1)
-      autotest (~> 4.3)
     babosa (0.2.0)
     bcrypt-ruby (2.1.3)
     builder (2.1.2)
@@ -61,6 +58,7 @@ GEM
       ffi (~> 0.6.3)
     chronic (0.3.0)
     coderay (0.9.6)
+    crack (0.1.8)
     culerity (0.2.13)
     database_cleaner (0.6.0)
     devise (1.2.rc)
@@ -80,6 +78,8 @@ GEM
     friendly_id (3.1.8)
       babosa (~> 0.2.0)
     has_scope (0.5.0)
+    httparty (0.6.1)
+      crack (= 0.1.8)
     i18n (0.5.0)
     inherited_resources (1.1.2)
       has_scope (~> 0.5.0)
@@ -116,7 +116,6 @@ GEM
       thor (~> 0.14.4)
     rake (0.8.7)
     rdiscount (1.6.5)
-    redgreen (1.2.2)
     responders (0.6.2)
     rspec (2.3.0)
       rspec-core (~> 2.3.0)
@@ -151,6 +150,8 @@ GEM
     temple (0.1.6)
     thor (0.14.6)
     tilt (1.1)
+    to_lang (0.1.0)
+      httparty (~> 0.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
@@ -174,8 +175,6 @@ DEPENDENCIES
   acts-as-taggable-on
   annotate
   autotest
-  autotest-growl
-  autotest-notification
   bullet
   by_star
   cancan
@@ -191,7 +190,6 @@ DEPENDENCIES
   mysql2
   rails (= 3.0.3)
   rdiscount
-  redgreen
   rspec-rails (>= 2.3.1)
   simple-navigation
   simple_form
@@ -199,6 +197,7 @@ DEPENDENCIES
   slim
   slim-rails
   steak
+  to_lang
   unicorn
   whenever
   will_paginate (~> 3.0.pre2)

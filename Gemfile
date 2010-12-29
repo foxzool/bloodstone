@@ -20,6 +20,7 @@ gem 'easy_roles'
 
 #设置url可读性好的id格式
 gem "friendly_id", "~> 3.1"
+gem "to_lang"
 
 #标签设置
 gem 'acts-as-taggable-on'
@@ -74,9 +75,4 @@ group :development, :test do
   gem 'factory_girl'
   gem 'factory_girl_rails' 
   gem 'database_cleaner'
-
-  gem 'redgreen' #更好的颜色输出
-  gem 'autotest-growl'
-  gem 'autotest-notification'
-
 end

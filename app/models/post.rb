@@ -9,7 +9,6 @@ class Post < ActiveRecord::Base
   acts_as_taggable
 
 
-  #TODO 加入cache_column
   has_friendly_id :title, :use_slug => true, :cache_column => 'cache_slug'
 
   validates :title, :body, :presence => true
@@ -21,24 +20,24 @@ class Post < ActiveRecord::Base
   #处理title的slug化
   def normalize_friendly_id(text)
     begin
-      text.to_english.gsub(/\s/, '-')
+      text.to_english_from_simplified_chinese.gsub(/\s/, '-')
     rescue
       text
     end
     #text.to_url
   end
-  
+
   def render_html
     self.body_html = markdown(coderay(self.body))
   end
-  
+
   def markdown(text)
     RDiscount.new(text, :smart).to_html
   end
-  
+
   def coderay(text)
     text.gsub(/\<code( lang="(.+?)")?\>(.+?)\<\/code\>/m) do
-      CodeRay.scan($3, $2).div(:css => :class)     
+      CodeRay.scan($3, $2).div(:css => :class)
    end
   end
 

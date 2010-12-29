@@ -44,13 +44,14 @@ class Post < ActiveRecord::Base
 
 end
 
+
 # == Schema Information
 #
 # Table name: posts
 #
 #  id         :integer(4)      not null, primary key
 #  title      :string(255)     not null
-#  slug       :string(255)     not null
+#  cache_slug :string(255)
 #  body       :text            default(""), not null
 #  body_html  :text            default(""), not null
 #  user_id    :integer(4)

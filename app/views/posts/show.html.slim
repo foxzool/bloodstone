@@ -1,3 +1,5 @@
+-content_for :title do
+  = @post.friendly_id
 acticle.articlecontent
     h2= link_to @post.title, post_path(@post)
     div.info

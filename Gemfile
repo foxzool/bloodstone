@@ -65,6 +65,7 @@ gem 'unicorn'
 group :development do
   #N+1查询处理
   gem 'bullet'
+  gem "rails-erd"
 end
 
 group :development, :test do

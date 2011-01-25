@@ -146,6 +146,11 @@ describe PostsController do
   end
 
   describe "nobody login " do
+    before(:each) do
+      @user = Factory.create(:admin)
+      sign_out @user
+    end
+
 
     describe "GET show" do
       it "assigns the requested post as @post" do

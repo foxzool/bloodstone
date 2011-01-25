@@ -8,7 +8,7 @@
 
   // The following are highly recommended additional parameters. Remove the slashes in front to use.
    var disqus_identifier = "<%= post_path(@post.id)  %>";
-   var disqus_url = "<%= post_path(@post.friendly_id)  %>";
+   var disqus_url = "<%= request.url %>";
 
   /* * * DON'T EDIT BELOW THIS LINE * * */
   (function() {

@@ -78,6 +78,7 @@ GEM
     friendly_id (3.1.8)
       babosa (~> 0.2.0)
     has_scope (0.5.0)
+    hirb (0.3.6)
     httparty (0.6.1)
       crack (= 0.1.8)
     i18n (0.5.0)
@@ -166,10 +167,12 @@ GEM
     uniform_notifier (1.0.1)
     warden (1.0.3)
       rack (>= 1.0.0)
+    what_methods (1.0.1)
     whenever (0.6.2)
       aaronh-chronic (>= 0.3.9)
       activesupport (>= 2.3.4)
     will_paginate (3.0.pre2)
+    wirble (0.1.3)
     xpath (0.1.2)
       nokogiri (~> 1.3)
 
@@ -191,6 +194,7 @@ DEPENDENCIES
   factory_girl
   factory_girl_rails
   friendly_id (~> 3.1)
+  hirb
   inherited_resources (~> 1.1.2)
   mysql2
   rails (= 3.0.3)
@@ -205,5 +209,7 @@ DEPENDENCIES
   steak
   to_lang
   unicorn
+  what_methods
   whenever
   will_paginate (~> 3.0.pre2)
+  wirble

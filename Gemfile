@@ -62,6 +62,11 @@ gem "annotate"
 #服务端
 gem 'unicorn'
 
+#irb增强
+gem 'what_methods'
+gem 'wirble'
+gem 'hirb'
+
 group :development do
   #N+1查询处理
   gem 'bullet'

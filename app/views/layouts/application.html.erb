@@ -90,6 +90,10 @@
     <script> DD_belatedPNG.fix('img, .png_bg'); </script>
     <![endif]-->
 
+    <!-- JiaThis Button BEGIN -->
+    <script type="text/javascript" src="http://v2.jiathis.com/code/jiathis_r.js?move=0&amp;btn=r2.gif&amp;uid=902635" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+
     <!-- yui profiler and profileviewer - remove for production -->
     <%- unless Rails.env.production? %>
       <%= javascript_include_tag 'profiling/yahoo-profiling.min' %>
@@ -111,8 +115,8 @@
     <% end %>
   <footer>
     <section id="footer-area">
-      Copyright © 2010-2011 <%= Setting.title %> <a href="https://github.com/zhooul/bloodstone">Powered by Bloodstone</a> v<%= Bloodstone::VERSION  %>
+    Copyright © 2010-2011 <a href="http://creativecommons.org/licenses/by/2.5/cn/">CC 知识共享署名 2.5 中国大陆许可协议</a> <a href="https://github.com/zhooul/bloodstone">Powered by Bloodstone</a> v<%= Bloodstone::VERSION  %>
     </section>
   </footer>
-</body>
+  </body>
 </html>
